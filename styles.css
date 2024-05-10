@@ -1,0 +1,15 @@
+html{
+    background: blueviolet;
+}
+main{
+    background: green;
+}
+header{
+    background: pink;
+}
+footer{
+    background: rgb(117, 136, 152)
+}
+button{
+    background: red;
+}

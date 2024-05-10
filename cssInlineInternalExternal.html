@@ -1,0 +1,50 @@
+<html style="background:blanchedalmond">
+    <head id="head">
+    </head>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <style>
+        main{
+            background: green;
+        }
+        header{
+            background: pink;
+        }
+        footer{
+            background: rgb(117, 136, 152)
+        }
+        button{
+            background: red;
+        }
+    </style>
+    <main>
+        <h2>Welcome to My Website</h2>
+        <p>This is a simple website.</p>
+        <br>
+        <button onclick="addCSS()" id = "button">Toggle CSS</button>
+    </main>
+        <br>
+    <footer>
+        <p>Copyright ©Ritik Agarwal</p>
+    </footer>
+    <script>
+        let counter = 0;
+        function addCSS(){
+            counter ++;
+            if(counter%2!=0)
+                document.getElementById("head").innerHTML='        <title>toggle css</title>\n <link rel="stylesheet" href="./styles.css">'
+            else
+                document.getElementById("head").innerHTML='<title>toggle css</title>'
+
+        }
+    </script>
+    </body>
+</html>
